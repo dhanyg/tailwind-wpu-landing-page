@@ -1,0 +1,29 @@
+html, body {
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+#hero {
+    /* height: 540px; */
+    background-image: url('../img/hero.jpg');
+}
+#hero::after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    display: block;
+    background-image: linear-gradient(to top, rgba(0,0,0,1), rgba(0,0,0,0));
+    position: absolute;
+    top: 0;
+}
+
+@media (min-width: 768px) {
+    #header .nav-link:hover::after {
+        content: '';
+        display: block;
+        border-bottom: solid 3px #0b63dc;
+        width: 20px;
+        margin: auto;
+        padding-bottom: 5px; /* memberi jarak antara menu dengan border biru */
+        margin-bottom: -8px; /* mempertahankan ukuran margin menu navigasi */
+    }
+}
