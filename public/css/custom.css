@@ -3,8 +3,10 @@ html, body {
     scroll-behavior: smooth;
 }
 #hero {
-    /* height: 540px; */
+    height: 640px;
     background-image: url('../img/hero.jpg');
+    background-size: cover;
+    background-position: center;
 }
 #hero::after {
     content: '';
